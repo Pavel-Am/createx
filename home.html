@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230327122322">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230328235751">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header" data-lp>
+		<header hidden class="header" data-lp>
 			<div class="header__container">
 				<a href="home.html" target="_blank" class="header__logo logo">
 					<div class="logo__link logo__link--c _icon-logo-c"></div>
@@ -49,7 +49,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section id="top" class="page__main main-page">
+			<section hidden id="top" class="page__main main-page">
 				<div class="main-page__container">
 					<div class="main-page__body">
 						<div class="main-page__content">
@@ -96,7 +96,7 @@
 				</div>
 			</section>
 
-			<section class="who-we-are">
+			<section hidden class="who-we-are">
 				<div class="who-we-are__container">
 					<div class="who-we-are__image">
 						<picture><source srcset="img/who-we-are/girl.webp" type="image/webp"><img src="img/who-we-are/girl.jpg" alt="Images"></picture>
@@ -123,7 +123,7 @@
 				</div>
 			</section>
 
-			<section class="featured-courses">
+			<section hidden class="featured-courses">
 				<div class="featured-courses__container">
 					<div class="featured-courses__title-box">
 						<div class="featured-courses__header-block block-header">
@@ -227,21 +227,66 @@
 						<div class="block-header__subtitle subtitle">That’s how we do it</div>
 						<div class="block-header__title title">That’s how we do it</div>
 					</div>
-					<div class="benefits__tabs tab">
-						<div class="tab__item _icon-star">Experienced Tutors</div>
-						<div class="tab__item _icon-feedback">Feedback & Support</div>
-						<div class="tab__item _icon-library">24/7 Online Library</div>
-						<div class="tab__item _icon-community">Community</div>
-					</div>
-					<div class="benefits__body">
-						<div class="benefits__content content">
-							<div class="content__title">Only practicing tutors</div>
-							<div class="content__text">
-								Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+					<div data-tabs class="tabs">
+						<nav data-tabs-titles class="tabs__navigation">
+							<button type="button" class="tabs__title _icon-star _tab-active">Experienced Tutors</button>
+							<button type="button" class="tabs__title _icon-feedback">Feedback & Support</button>
+							<button type="button" class="tabs__title _icon-library">24/7 Online Library</button>
+							<button type="button" class="tabs__title _icon-community">Community</button>
+						</nav>
+						<div data-tabs-body class="tabs__content">
+							<div class="tabs__body">
+								<div class="tabs__box">
+									<div class="tabs__text-block block-text">
+										<div class="block-text__title title title_s32">Only practicing tutors</div>
+										<div class="block-text__text">
+											Urna nisi, arcu cras nunc. Aenean quam est lobortis mi non fames dictum suspendisse. Morbi mauris cras massa ut dolor quis sociis mollis augue. Nunc, sodales tortor sit diam mi amet massa. Fermentum diam diam sociis vestibulum. Nulla nisl accumsan, id dignissim massa ut amet. Amet enim, nisi tempus vehicula.
+										</div>
+									</div>
+									<div class="tabs__images">
+										<img src="img/benefits/tutors.svg" alt="Image">
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="benefits__images">
-							<img src="img/benefits/illustration.svg" alt="Image">
+							<div class="tabs__body">
+								<div class="tabs__box">
+									<div class="tabs__text-block block-text">
+										<div class="block-text__title title title_s32">Always in touch, ready to support</div>
+										<div class="block-text__text">
+											Faucibus erat massa elementum nec fermentum augue. Ante pellentesque dis et malesuada mauris, faucibus est et a. Gravida malesuada ut varius eu pretium vitae eu. Volutpat nullam posuere eget felis at dui neque. Neque vitae, pulvinar donec integer lacus, fermentum, faucibus. Lorem porttitor hendrerit vel interdum arcu arcu mollis massa. Velit nulla felis ornare elit a platea malesuada.
+										</div>
+									</div>
+									<div class="tabs__images">
+										<img src="img/benefits/support.svg" alt="Image">
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__box">
+									<div class="tabs__text-block block-text">
+										<div class="block-text__title title title_s32">The most carefully selected materials</div>
+										<div class="block-text__text">
+											Senectus magnis diam tellus nibh elit ac ac. Elit eget faucibus urna, feugiat arcu mattis viverra tempor id. Vivamus nunc quam donec non amet nulla etiam ullamcorper posuere. Venenatis commodo molestie eleifend nulla faucibus in. In sed felis adipiscing pharetra, etiam. Molestie euismod consectetur eu sed. Sit magnis sed sed ipsum vulputate pellentesque nullam faucibus.
+										</div>
+									</div>
+									<div class="tabs__images">
+										<img src="img/benefits/library.svg" alt="Image">
+									</div>
+								</div>
+							</div>
+							<div class="tabs__body">
+								<div class="tabs__box">
+									<div class="tabs__text-block block-text">
+										<div class="block-text__title title title_s32">Student communication</div>
+										<div class="block-text__text">
+											Eu placerat magna elementum nulla egestas id. Non sit enim tortor massa id tristique vel tincidunt sit. Tellus, ridiculus dictum purus nibh sed bibendum. In eleifend ac convallis convallis lectus. Urna semper ac non eros, donec accumsan egestas ipsum. Arcu at morbi.
+										</div>
+									</div>
+									<div class="tabs__images">
+										<img src="img/benefits/community.svg" alt="Image">
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -318,7 +363,7 @@
 								<a href="tel:4055550128" class="list-footer__link _icon-iphone">(405) 555-0128</a>
 							</li>
 							<li class="list-footer__item">
-								<a href="#" class="list-footer__link _icon-email">hello@createx.com</a>
+								<a href="mailto:hello@createx.com" class="list-footer__link _icon-email">hello@createx.com</a>
 							</li>
 						</ul>
 					</nav>
@@ -326,9 +371,9 @@
 				<div class="footer__column">
 					<h3 class="footer__title footer__title--margin">SIGN UP TO OUR NEWSLETTER</h3>
 					<div class="footer__form">
-						<form action="#" class="form">
-							<input data-required autocomplete="off" type="text" name="form[email]" data-error="Error" placeholder="Email address" class="form__input">
-							<button type="submit" class="form__button _icon-slider-arrow"></button>
+						<form action="#" class="form-footer__form">
+							<input data-required="email" autocomplete="off" type="email" name="form[email]" data-error="Please enter a valid email" placeholder="Email address" class="form-footer__input">
+							<button type="submit" class="form-footer__button _icon-slider-arrow"></button>
 						</form>
 					</div>
 					<p class="footer__text footer__text--small">
@@ -344,7 +389,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230327122322"></script>
+	<script src="js/app.min.js?_v=20230328235751"></script>
 </body>
 
 </html>
