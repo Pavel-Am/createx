@@ -305,12 +305,12 @@ svg path {
 
 .form__error {
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   font-size: 0.75rem;
-  color: red;
+  color: #e90023;
   padding-left: 0.75rem;
-  margin-top: 0.3125rem;
+  margin-top: -1.125rem;
 }
 
 .button {
@@ -1416,6 +1416,130 @@ svg path {
   width: 100%;
 }
 
+.subscribe {
+  background: -o-linear-gradient(34.05deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+  background: linear-gradient(55.95deg, rgba(255, 64, 58, 0.2) 0%, rgba(247, 94, 5, 0.2) 100%);
+  position: relative;
+}
+
+.subscribe__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.subscribe__header-block {
+  max-width: 50.625rem;
+  text-align: center;
+}
+
+.subscribe__form {
+  text-align: center;
+}
+
+.form-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.form-subscribe .form__error {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  font-size: 0.75rem;
+  color: #e90023;
+  padding-left: 0.9375rem;
+  margin-top: 0.3125rem;
+}
+
+.form-subscribe__input {
+  min-height: 3.25rem;
+  background: #FFFFFF;
+  border: 1px solid #D7DADD;
+  border-radius: 4px;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.form-subscribe__input::-webkit-input-placeholder {
+  line-height: 1.6;
+  color: #9A9CA5;
+}
+
+.form-subscribe__input::-moz-placeholder {
+  line-height: 1.6;
+  color: #9A9CA5;
+}
+
+.form-subscribe__input:-ms-input-placeholder {
+  line-height: 1.6;
+  color: #9A9CA5;
+}
+
+.form-subscribe__input::-ms-input-placeholder {
+  line-height: 1.6;
+  color: #9A9CA5;
+}
+
+.form-subscribe__input::placeholder {
+  line-height: 1.6;
+  color: #9A9CA5;
+}
+
+.form-subscribe__input._form-error::-webkit-input-placeholder {
+  color: #e90023;
+}
+
+.form-subscribe__input._form-error::-moz-placeholder {
+  color: #e90023;
+}
+
+.form-subscribe__input._form-error:-ms-input-placeholder {
+  color: #e90023;
+}
+
+.form-subscribe__input._form-error::-ms-input-placeholder {
+  color: #e90023;
+}
+
+.form-subscribe__input._form-error::placeholder {
+  color: #e90023;
+}
+
+.decor__item_sc-01 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 22.125rem;
+  height: 15.375rem;
+  background: url("../img/subscribe/left.svg") 0 0 no-repeat;
+}
+
+.decor__item_sc-02 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 22.125rem;
+  height: 15.375rem;
+  background: url("../img/subscribe/right.svg") 0 0 no-repeat;
+}
+
 /*===========================================================================================================*/
 
 @media (min-width: 47.99875em) {
@@ -1522,11 +1646,11 @@ svg path {
   }
 
   .footer__title--margin:not(:last-child) {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
   }
 
   .footer__form:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .footer__text--small:not(:last-child) {
@@ -1788,6 +1912,28 @@ svg path {
   .logo-certificate_3 {
     width: 6.5625rem;
   }
+
+  .subscribe__container {
+    padding-top: 7.5rem;
+  }
+
+  .subscribe__container {
+    padding-bottom: 11.25rem;
+  }
+
+  .subscribe__container {
+    row-gap: 3.75rem;
+  }
+
+  .form-subscribe {
+    -webkit-column-gap: 1.5rem;
+       -moz-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+
+  .form-subscribe__input {
+    width: 26.375rem;
+  }
 }
 
 @media (max-width: 62em) {
@@ -1928,11 +2074,11 @@ svg path {
   }
 
   .footer__title--margin:not(:last-child) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .footer__form:not(:last-child) {
-    margin-bottom: 1.125rem;
+    margin-bottom: 0.5rem;
   }
 
   .footer__text--small:not(:last-child) {
@@ -2095,6 +2241,28 @@ svg path {
 
   .logo-certificate_3 {
     width: 5.8125rem;
+  }
+
+  .subscribe__container {
+    padding-top: 1.875rem;
+  }
+
+  .subscribe__container {
+    padding-bottom: 1.875rem;
+  }
+
+  .subscribe__container {
+    row-gap: 1.25rem;
+  }
+
+  .form-subscribe {
+    -webkit-column-gap: 0.9375rem;
+       -moz-column-gap: 0.9375rem;
+            column-gap: 0.9375rem;
+  }
+
+  .form-subscribe__input {
+    width: 18.125rem;
   }
 }
 
@@ -2444,6 +2612,10 @@ svg path {
         -ms-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+
+  .subscribe__header-block {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 47.99875em) and (max-width: 20em) {
@@ -2553,6 +2725,28 @@ svg path {
         -ms-flex-direction: column;
             flex-direction: column;
     row-gap: 1.5625rem;
+  }
+
+  .form-subscribe {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    row-gap: 0.9375rem;
+  }
+
+  .form-subscribe .form__error {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.875rem;
+    padding-left: 0.9375rem;
+    margin-top: -1.125rem;
+  }
+
+  .form-subscribe__input {
+    width: 100%;
   }
 }
 
@@ -2798,27 +2992,27 @@ svg path {
     }
 }
 
-@supports (margin-bottom: clamp( 0.5rem , 0.414893617rem  +  0.4255319149vw , 0.75rem )) {
+@supports (margin-bottom: clamp( 0.75rem , 0.4946808511rem  +  1.2765957447vw , 1.5rem )) {
     .footer__title--margin:not(:last-child) {
+      margin-bottom: clamp( 0.75rem , 0.4946808511rem  +  1.2765957447vw , 1.5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 0.75rem , 0.4946808511rem  +  1.2765957447vw , 1.5rem )) {
+    .footer__title--margin:not(:last-child) {
+      margin-bottom: calc(0.75rem + 0.75 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports (margin-bottom: clamp( 0.5rem , 0.414893617rem  +  0.4255319149vw , 0.75rem )) {
+    .footer__form:not(:last-child) {
       margin-bottom: clamp( 0.5rem , 0.414893617rem  +  0.4255319149vw , 0.75rem );
     }
 }
 
 @supports not (margin-bottom: clamp( 0.5rem , 0.414893617rem  +  0.4255319149vw , 0.75rem )) {
-    .footer__title--margin:not(:last-child) {
+    .footer__form:not(:last-child) {
       margin-bottom: calc(0.5rem + 0.25 * (100vw - 20rem) / 58.75);
-    }
-}
-
-@supports (margin-bottom: clamp( 1.125rem , 0.9973404255rem  +  0.6382978723vw , 1.5rem )) {
-    .footer__form:not(:last-child) {
-      margin-bottom: clamp( 1.125rem , 0.9973404255rem  +  0.6382978723vw , 1.5rem );
-    }
-}
-
-@supports not (margin-bottom: clamp( 1.125rem , 0.9973404255rem  +  0.6382978723vw , 1.5rem )) {
-    .footer__form:not(:last-child) {
-      margin-bottom: calc(1.125rem + 0.375 * (100vw - 20rem) / 58.75);
     }
 }
 
@@ -3299,6 +3493,70 @@ svg path {
 @supports not (width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem )) {
     .logo-certificate_3 {
       width: calc(5.8125rem + 0.75 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports (padding-top: clamp( 1.875rem , -0.039893617rem  +  9.5744680851vw , 7.5rem )) {
+    .subscribe__container {
+      padding-top: clamp( 1.875rem , -0.039893617rem  +  9.5744680851vw , 7.5rem );
+    }
+}
+
+@supports not (padding-top: clamp( 1.875rem , -0.039893617rem  +  9.5744680851vw , 7.5rem )) {
+    .subscribe__container {
+      padding-top: calc(1.875rem + 5.625 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports (padding-bottom: clamp( 1.875rem , -1.3164893617rem  +  15.9574468085vw , 11.25rem )) {
+    .subscribe__container {
+      padding-bottom: clamp( 1.875rem , -1.3164893617rem  +  15.9574468085vw , 11.25rem );
+    }
+}
+
+@supports not (padding-bottom: clamp( 1.875rem , -1.3164893617rem  +  15.9574468085vw , 11.25rem )) {
+    .subscribe__container {
+      padding-bottom: calc(1.875rem + 9.375 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports (row-gap: clamp( 1.25rem , 0.3989361702rem  +  4.2553191489vw , 3.75rem )) {
+    .subscribe__container {
+      row-gap: clamp( 1.25rem , 0.3989361702rem  +  4.2553191489vw , 3.75rem );
+    }
+}
+
+@supports not (row-gap: clamp( 1.25rem , 0.3989361702rem  +  4.2553191489vw , 3.75rem )) {
+    .subscribe__container {
+      row-gap: calc(1.25rem + 2.5 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports ((-moz-column-gap: clamp( 0.9375rem , 0.7460106383rem  +  0.9574468085vw , 1.5rem )) or (column-gap: clamp( 0.9375rem , 0.7460106383rem  +  0.9574468085vw , 1.5rem ))) {
+    .form-subscribe {
+      -webkit-column-gap: clamp( 0.9375rem , 0.7460106383rem  +  0.9574468085vw , 1.5rem );
+         -moz-column-gap: clamp( 0.9375rem , 0.7460106383rem  +  0.9574468085vw , 1.5rem );
+              column-gap: clamp( 0.9375rem , 0.7460106383rem  +  0.9574468085vw , 1.5rem );
+    }
+}
+
+@supports not ((-moz-column-gap: clamp( 0.9375rem , 0.7460106383rem  +  0.9574468085vw , 1.5rem )) or (column-gap: clamp( 0.9375rem , 0.7460106383rem  +  0.9574468085vw , 1.5rem ))) {
+    .form-subscribe {
+      -webkit-column-gap: calc(0.9375rem + 0.5625 * (100vw - 20rem) / 58.75);
+         -moz-column-gap: calc(0.9375rem + 0.5625 * (100vw - 20rem) / 58.75);
+              column-gap: calc(0.9375rem + 0.5625 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports (width: clamp( 18.125rem , 15.3164893617rem  +  14.0425531915vw , 26.375rem )) {
+    .form-subscribe__input {
+      width: clamp( 18.125rem , 15.3164893617rem  +  14.0425531915vw , 26.375rem );
+    }
+}
+
+@supports not (width: clamp( 18.125rem , 15.3164893617rem  +  14.0425531915vw , 26.375rem )) {
+    .form-subscribe__input {
+      width: calc(18.125rem + 8.25 * (100vw - 20rem) / 58.75);
     }
 }
 }

@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230330131626">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230330181604">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -353,7 +353,7 @@
 				</div>
 			</section>
 
-			<section class="page__certificate certificate">
+			<section hidden class="page__certificate certificate">
 				<div class="certificate__container">
 					<div class="certificate__content">
 						<div class="certificate__header-block block-header">
@@ -376,6 +376,28 @@
 					<div class="certificate__image">
 						<picture><source srcset="img/certificate/certificate.webp" type="image/webp"><img src="img/certificate/certificate.jpg" alt="certificate"></picture>
 					</div>
+				</div>
+			</section>
+
+
+
+
+
+			<section class="page__subscribe subscribe">
+				<div class="subscribe__container">
+					<div class="subscribe__header-block block-header">
+						<div class="block-header__subtitle subtitle">Don’t miss anything</div>
+						<div class="block-header__title title">Subscribe to the Createx School announcements</div>
+					</div>
+					<form class="subscribe__form form-subscribe" action="files/sendmail/sendmail.php" method="POST">
+						<input data-required="email" type="text" name="form[email]" data-error="Please enter a valid email" placeholder="Your working email" class="form-subscribe__input">
+						<button type="submit" class="form-subscribe__button button"><span>Subscribe</span></button>
+					</form>
+
+				</div>
+				<div class="subscribe__decor decor">
+					<div class="decor__item decor__item_sc-01"></div>
+					<div class="decor__item decor__item_sc-02"></div>
 				</div>
 			</section>
 		</main>
@@ -459,7 +481,7 @@
 					<h3 class="footer__title footer__title--margin">SIGN UP TO OUR NEWSLETTER</h3>
 					<div class="footer__form">
 						<form action="#" class="form-footer__form">
-							<input data-required="email" autocomplete="off" type="email" name="form[email]" data-error="Please enter a valid email" placeholder="Email address" class="form-footer__input">
+							<input data-required="email" autocomplete="off" type="text" name="form[email]" data-error="Please enter a valid email" placeholder="Email address" class="form-footer__input">
 							<button type="submit" class="form-footer__button _icon-slider-arrow"></button>
 						</form>
 					</div>
@@ -476,7 +498,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230330131626"></script>
+	<script src="js/app.min.js?_v=20230330181604"></script>
 </body>
 
 </html>
