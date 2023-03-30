@@ -1370,8 +1370,8 @@ svg path {
 
 .certificate__content {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
   padding-top: 2.8125rem;
 }
 
@@ -1387,41 +1387,33 @@ svg path {
 
 .certificate__image img {
   width: 100%;
+  -webkit-box-shadow: 0px 80px 80px rgba(154, 156, 165, 0.16), 0px 30px 24px rgba(154, 156, 165, 0.1), 0px 12px 10px rgba(154, 156, 165, 0.08), 0px 4px 4px rgba(30, 33, 44, 0.05);
+          box-shadow: 0px 80px 80px rgba(154, 156, 165, 0.16), 0px 30px 24px rgba(154, 156, 165, 0.1), 0px 12px 10px rgba(154, 156, 165, 0.08), 0px 4px 4px rgba(30, 33, 44, 0.05);
   -webkit-transform: translate(0, 9%);
       -ms-transform: translate(0, 9%);
           transform: translate(0, 9%);
 }
 
 .logo-certificate {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
   -webkit-column-gap: 0.3125rem;
      -moz-column-gap: 0.3125rem;
           column-gap: 0.3125rem;
 }
 
-.logo-certificate_1 {
-  width: 6.5625rem;
-  height: 3.125rem;
-  background: url("../img/certificate/logos/01.svg") 0 0 no-repeat;
+.logo-certificate_1 img {
+  width: 100%;
 }
 
-.logo-certificate_2 {
-  width: 6.5625rem;
-  height: 3.125rem;
-  background: url("../img/certificate/logos/02.svg") 0 0 no-repeat;
+.logo-certificate_2 img {
+  width: 100%;
 }
 
-.logo-certificate_3 {
-  width: 6.5625rem;
-  height: 3.125rem;
-  background: url("../img/certificate/logos/03.svg") 0 0 no-repeat;
+.logo-certificate_3 img {
+  width: 100%;
 }
 
 /*===========================================================================================================*/
@@ -1445,10 +1437,6 @@ svg path {
 }
 
 @media (min-width: 76.875em) {
-  .title {
-    font-size: 2.875rem;
-  }
-
   .block-header__title {
     font-size: 2.875rem;
   }
@@ -1465,6 +1453,10 @@ svg path {
 
   .subtitle {
     font-size: 1rem;
+  }
+
+  .title {
+    font-size: 2.875rem;
   }
 
   .title_s32 {
@@ -1784,6 +1776,18 @@ svg path {
   .logo-certificate:not(:last-child) {
     margin-bottom: 1.875rem;
   }
+
+  .logo-certificate_1 {
+    width: 6.5625rem;
+  }
+
+  .logo-certificate_2 {
+    width: 6.5625rem;
+  }
+
+  .logo-certificate_3 {
+    width: 6.5625rem;
+  }
 }
 
 @media (max-width: 62em) {
@@ -2080,6 +2084,18 @@ svg path {
   .logo-certificate:not(:last-child) {
     margin-bottom: 1.25rem;
   }
+
+  .logo-certificate_1 {
+    width: 5.8125rem;
+  }
+
+  .logo-certificate_2 {
+    width: 5.8125rem;
+  }
+
+  .logo-certificate_3 {
+    width: 5.8125rem;
+  }
 }
 
 @media (max-width: 78.125em) {
@@ -2147,6 +2163,13 @@ svg path {
 
   .card__content {
     padding: 0.9375rem;
+  }
+
+  .certificate__content {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding-top: 0rem;
   }
 }
 
@@ -2404,6 +2427,7 @@ svg path {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    row-gap: 1.5625rem;
   }
 
   .certificate__content {
@@ -2413,6 +2437,12 @@ svg path {
 
   .certificate__image {
     max-width: 100%;
+  }
+
+  .certificate__image img {
+    -webkit-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -3235,18 +3265,66 @@ svg path {
       margin-bottom: calc(1.25rem + 0.625 * (100vw - 20rem) / 58.75);
     }
 }
-}
 
-@media (min-width: 62em) and (max-width: 76.875em) {
-@supports (font-size: clamp( 2.1875rem , -0.6780462185rem  +  4.6218487395vw , 2.875rem )) {
-    .title {
-      font-size: clamp( 2.1875rem , -0.6780462185rem  +  4.6218487395vw , 2.875rem );
+@supports (width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem )) {
+    .logo-certificate_1 {
+      width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem );
     }
 }
 
-@supports not (font-size: clamp( 2.1875rem , -0.6780462185rem  +  4.6218487395vw , 2.875rem )) {
+@supports not (width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem )) {
+    .logo-certificate_1 {
+      width: calc(5.8125rem + 0.75 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports (width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem )) {
+    .logo-certificate_2 {
+      width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem );
+    }
+}
+
+@supports not (width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem )) {
+    .logo-certificate_2 {
+      width: calc(5.8125rem + 0.75 * (100vw - 20rem) / 58.75);
+    }
+}
+
+@supports (width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem )) {
+    .logo-certificate_3 {
+      width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem );
+    }
+}
+
+@supports not (width: clamp( 5.8125rem , 5.5571808511rem  +  1.2765957447vw , 6.5625rem )) {
+    .logo-certificate_3 {
+      width: calc(5.8125rem + 0.75 * (100vw - 20rem) / 58.75);
+    }
+}
+}
+
+@media (min-width: 62em) and (max-width: 78.75em) {
+@supports (font-size: clamp( 2.1875rem , -0.3572761194rem  +  4.1044776119vw , 2.875rem )) {
     .title {
-      font-size: calc(2.1875rem + 0.6875 * (100vw - 62rem) / 14.875);
+      font-size: clamp( 2.1875rem , -0.3572761194rem  +  4.1044776119vw , 2.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 2.1875rem , -0.3572761194rem  +  4.1044776119vw , 2.875rem )) {
+    .title {
+      font-size: calc(2.1875rem + 0.6875 * (100vw - 62rem) / 16.75);
+    }
+}
+
+@supports (gap: clamp( 1.25rem , -1.0634328358rem  +  3.7313432836vw , 1.875rem )) {
+    .featured-courses__cards {
+      gap: clamp( 1.25rem , -1.0634328358rem  +  3.7313432836vw , 1.875rem );
+    }
+}
+
+@supports not (gap: clamp( 1.25rem , -1.0634328358rem  +  3.7313432836vw , 1.875rem )) {
+    .featured-courses__cards {
+      gap: calc(1.25rem + 0.625 * (100vw - 62rem) / 16.75);
     }
 }
 }
@@ -3618,20 +3696,6 @@ svg path {
 @supports not (padding-right: clamp( 0.0000000625rem , -46.874992125rem  +  59.99999vw , 0.375rem )) {
     .list {
       padding-right: calc(0.0000000625rem + 0.3749999375 * (100vw - 78.125rem) / 0.625);
-    }
-}
-}
-
-@media (min-width: 62em) and (max-width: 78.75em) {
-@supports (gap: clamp( 1.25rem , -1.0634328358rem  +  3.7313432836vw , 1.875rem )) {
-    .featured-courses__cards {
-      gap: clamp( 1.25rem , -1.0634328358rem  +  3.7313432836vw , 1.875rem );
-    }
-}
-
-@supports not (gap: clamp( 1.25rem , -1.0634328358rem  +  3.7313432836vw , 1.875rem )) {
-    .featured-courses__cards {
-      gap: calc(1.25rem + 0.625 * (100vw - 62rem) / 16.75);
     }
 }
 }
