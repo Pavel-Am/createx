@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230401105812">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230407230108">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,31 +20,35 @@
 					<div class="logo__link logo__link--c _icon-logo-c"></div>
 					<div class="logo__link logo__link--x _icon-logo-x"></div>
 				</a>
-				<div class="header__menu menu">
-					<nav class="menu__body">
+				<nav class="header__menu menu">
+					<div class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" class="menu__link">About Us</a>
+								<a href="about_us.html" target="_blank" class="menu__link">About Us</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Courses</a>
+								<a href="courses.html" target="_blank" class="menu__link">Courses</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Events</a>
+								<a href="events.html" target="_blank" class="menu__link">Events</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Blog</a>
+								<a href="blog.html" target="_blank" class="menu__link">Blog</a>
 							</li>
 							<li class="menu__item">
-								<a href="#" class="menu__link">Contacts</a>
+								<a href="contacts.html" target="_blank" class="menu__link">Contacts</a>
 							</li>
 						</ul>
-					</nav>
-				</div>
-				<div class="header__action">
+					</div>
+				</nav>
+				<div class="header__actions actions-header">
+					<a href="#" class="actions-header__button button"><span>Get consultation</span></a>
+					<div data-da=".menu__body, 767.98" class="actions-header__register">
+						<a data-popup="#log-in" href="#" class="actions-header__link _icon-user">Log in</a>
+						<div class="actions-header__link">/</div>
+						<a data-popup="#log-up" href="#" class="actions-header__link">Register</a>
+					</div>
 					<button type="button" class="icon-menu"><span></span></button>
-					<a href="#" class="header__button button"><span>Get consultation</span></a>
-					<a data-da=".menu__body, 767.98" href="#" class="header__register _icon-user"><span>Log in / Register</span></a>
 				</div>
 			</div>
 		</header>
@@ -404,9 +408,9 @@
 									<div class="meta__duration _icon-clock">36 min</div>
 								</div>
 								<div class="cards-block__title">What is traffic arbitrage and does it really make money?</div>
-								<div class="cards-block__text">Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</div>
-								<a class="cards-block__link _icon-slider-arrow">Listen</a>
+								<div class="cards-block__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi beatae ipsum odio unde laudantium placeat.Pharetra, ullamcorper iaculis viverra parturient sed id sed. Convallis proin dignissim lacus, purus gravida...</div>
 							</div>
+							<a class="cards-block__link _icon-slider-arrow">Listen</a>
 						</div>
 
 						<div class="cards-block__item">
@@ -424,8 +428,8 @@
 								</div>
 								<div class="cards-block__title">What to do and who to talk to if you want to get feedback on the product</div>
 								<div class="cards-block__text">Neque a, senectus consectetur odio in aliquet nec eu. Ultricies ac nibh urna urna sagittis faucibus...</div>
-								<a class="cards-block__link _icon-slider-arrow">Watch</a>
 							</div>
+							<a class="cards-block__link _icon-slider-arrow">Watch</a>
 						</div>
 
 						<div class="cards-block__item">
@@ -442,14 +446,14 @@
 								</div>
 								<div class="cards-block__title">Should you choose a creative profession if you are attracted to creativity?</div>
 								<div class="cards-block__text">Curabitur nisl tincidunt eros venenatis vestibulum ac placerat. Tortor, viverra sed vulputate ultrices...</div>
-								<a class="cards-block__link _icon-slider-arrow">Read</a>
 							</div>
+							<a class="cards-block__link _icon-slider-arrow">Read</a>
 						</div>
 					</div>
 				</div>
 			</setion>
 
-			<section hidden class="page__subscribe subscribe">
+			<section class="page__subscribe subscribe">
 				<div class="subscribe__container">
 					<div class="subscribe__header-block block-header">
 						<div class="block-header__subtitle subtitle">Don’t miss anything</div>
@@ -563,7 +567,97 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20230401105812"></script>
+	<div id="log-in" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<!-- <div class="popup__text"> -->
+
+				<form class="popup__form form" action="#">
+					<div class="form__title">Sign in</div>
+					<div class="form__text">Sign in to your account using email and password provided during registration.</div>
+					<div class="form__body">
+						<div class="form__line">
+							<label class="form__label" for="email-in">Email</label>
+							<input class="form__input input" id="email-in" data-required="email" type="text" name="form[email]" data-error="Please enter a valid email" placeholder="Your working email">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="pass-in">Password</label>
+							<input class="form__input input" id="pass-in" data-required="password" type="password" name="form[password]" data-error="Please enter your password" placeholder="Your password">
+						</div>
+						<div class="form__checkblock">
+							<div class="form__checkbox checkbox">
+								<input class="checkbox__input" id="c_1" data-error="Помилка" type="checkbox" value="1" name="form[]">
+								<label class="checkbox__label" for="c_1"><span class="checkbox__text">Keep me signed in</span></label>
+							</div>
+							<a class="form__link" href="#" target="_blank">Forgot password?</a>
+						</div>
+						<button type="submit" class="form__button button"><span>Sign in</span></button>
+					</div>
+					<div class="form__text form__text_left">Don't have an account? <a href="" class="form__link">Sign up</a></div>
+					<div class="form__footer">
+						<div class="form__text">Or sign in with</div>
+						<div class="form__socials socials-popup">
+							<a href="https://uk-ua.facebook.com/" target="_blank" class="socials-popup__link _icon-facebook"></a>
+							<a href="https://uk-ua.facebook.com/" target="_blank" class="socials-popup__link _icon-google"></a>
+							<a href="https://twitter.com/?lang=ru" target="_blank" class="socials-popup__link _icon-twitter"></a>
+							<a href="https://www.linkedin.com/login/ru" target="_blank" class="socials-popup__link _icon-linked-in"></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id="log-up" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"></button>
+				<!-- <div class="popup__text"> -->
+
+				<form class="popup__form form" action="#">
+					<div class="form__title">Sign up</div>
+					<div class="form__text">Registration takes less than a minute but gives you full control over your studying.</div>
+					<div class="form__body">
+						<div class="form__line">
+							<label class="form__label" for="email-in">Full Name</label>
+							<input class="form__input input" id="email-in" data-required="text" type="text" name="form[]" data-error="Please enter Your full name" placeholder="Your full name">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="email-in">Email</label>
+							<input class="form__input input" id="email-in" data-required="email" type="text" name="form[email]" data-error="Please enter a valid email" placeholder="Your working email">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="pass-in">Password</label>
+							<input class="form__input input" id="pass-in" data-required="password" type="password" name="form[password]" data-error="Please enter your password" placeholder="Your password">
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="pass-in">Confirm Password</label>
+							<input class="form__input input" id="pass-in" data-required="password" type="password" name="form[password]" data-error="Please enter your password" placeholder="Your password">
+						</div>
+						<div class="form__checkblock">
+							<div class="form__checkbox checkbox">
+								<input class="checkbox__input" id="c_2" data-error="Помилка" type="checkbox" value="1" name="form[]">
+								<label class="checkbox__label" for="c_2"><span class="checkbox__text">Remember me</span></label>
+							</div>
+							<!-- <a class="form__link" href="#" target="_blank">Forgot password?</a> -->
+						</div>
+						<button type="submit" class="form__button button"><span>Sign up</span></button>
+					</div>
+					<div class="form__text form__text_left">Already have an account? <a href="" class="form__link">Sign in</a></div>
+					<div class="form__footer">
+						<div class="form__text">Or sign in with</div>
+						<div class="form__socials socials-popup">
+							<a href="https://uk-ua.facebook.com/" target="_blank" class="socials-popup__link _icon-facebook"></a>
+							<a href="https://uk-ua.facebook.com/" target="_blank" class="socials-popup__link _icon-google"></a>
+							<a href="https://twitter.com/?lang=ru" target="_blank" class="socials-popup__link _icon-twitter"></a>
+							<a href="https://www.linkedin.com/login/ru" target="_blank" class="socials-popup__link _icon-linked-in"></a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20230407230108"></script>
 </body>
 
 </html>
